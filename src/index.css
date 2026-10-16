@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* PatternCraft-inspired subtle botanical & linen dot texture */
+.bg-pattern-linen {
+  background-color: #faf7f2;
+  background-image: 
+    radial-gradient(at 15% 15%, rgba(95, 116, 100, 0.08) 0px, transparent 50%),
+    radial-gradient(at 85% 20%, rgba(200, 169, 126, 0.12) 0px, transparent 50%),
+    radial-gradient(at 50% 80%, rgba(164, 109, 82, 0.07) 0px, transparent 55%),
+    radial-gradient(#c8a97e 0.55px, transparent 0.55px);
+  background-size: 100% 100%, 100% 100%, 100% 100%, 28px 28px;
+}
+
+/* Custom subtle glassmorphism */
+.luxury-card {
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(200, 169, 126, 0.25);
+  box-shadow: 0 20px 50px -15px rgba(61, 37, 27, 0.06);
+}
+
+.luxury-card:hover {
+  border-color: rgba(95, 116, 100, 0.45);
+  box-shadow: 0 25px 60px -12px rgba(61, 37, 27, 0.12);
+}
